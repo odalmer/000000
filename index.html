@@ -5,31 +5,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sorry kid</title>
+    <title>!@$%&^*&*(()__+*(^$@#!</title>
 
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
 
+        body {
+            color: white;
+            background-color: black;
+            line-height: 50px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .container {
+            display: grid;
+            justify-items: center;
+            position: absolute;
+            width: 200px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            
+
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #059862;
+            color: white;
+            cursor: pointer;
+        }
+
+        @media (min-width:900px) {
+            .container {
+                background-color: rgb(10, 10, 10);
+                padding: 10rem 5rem;
+            }
+        }
+    </style>
 
 </head>
 
 <body>
-    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/cXaczSW0fu0" title="YouTube video player"
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe> -->
+    <div class="container">
+        <h1>Who i am?</h1>
+        <p>lo ma duro que hay en rd </p>
+        <button type="button" id="btn">Let's go</button>
+    </div>
 
-    <p>hola</p>
-    <p id="gfg"></p>
     <script>
-        function json(url) {
-            return fetch(url).then(res => res.json());
-        }
-
-        let apiKey = '385e65ae57e890fba15a73a70c6eec09fbac1b86b1c7448321ca7a6a';
-        json(`https://api.ipdata.co?api-key=${apiKey}`).then(data => {
-            console.log(data.ip);
-            console.log(data.city);
-            console.log(data.country_code);
-            // so many more properties
-        });
+        const btn = document.getElementById("btn")
+        btn.addEventListener('click', () => {
+            for (let i = 1; i > 0; i++) {
+                console.log(1)
+                // alert("hola")
+            }
+        })
     </script>
 </body>
 
